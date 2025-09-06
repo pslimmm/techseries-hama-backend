@@ -20,7 +20,7 @@ class DocumentChatbot:
 
     def read_txt_files_from_data_raw(self) -> List[str]:
         root = pathlib.Path(config.DATA_RAW_DIR)
-        json_path = pathlib.Path(__file__).parent.parent / root / "data.json"
+        json_path = pathlib.Path(__file__).parent.parent / root / "output.json"
         target_lang = config.TARGET_LANGUAGE.get(self.target_language, "English")
         translate_mode = config.TRANSLATE_DATA_RAW
 
